@@ -65,7 +65,8 @@ app.get('/weather',(req,res)=>{
         res.send({
                 loc,
                 summary:body.daily.data[0].summary,
-                temperature:body.currently.temperature,
+                temperatureHigh:body.daily.data[0].temperatureHigh,
+                temperatureLow:body.daily.data[0].temperatureLow,
                 precipitation:body.currently.precipProbability,
                 lat,
                 lon

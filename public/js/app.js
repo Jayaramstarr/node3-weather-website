@@ -19,7 +19,7 @@ addEventListener('submit',(e)=>{
             if(data.error)
                 return msg1.textContent = data.error;
             msg1.textContent=`${data.loc}`;
-            msg2.textContent= `${data.summary}The temperature is ${data.temperature} degrees farenheit, with a precipitation of ${data.precipitation}%`;
+            msg2.textContent= `${data.summary}The temperature high is ${data.temperatureHigh} and temperature low is ${data.temperatureLow} degrees farenheit, with a precipitation of ${data.precipitation}%`;
                 
         });
     });
